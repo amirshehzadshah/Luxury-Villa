@@ -1,5 +1,5 @@
-import { data } from 'autoprefixer'
 import React from 'react'
+import { Locations } from '../Components/Locations'
 
 const Location = () => {
 
@@ -31,25 +31,7 @@ const Location = () => {
       <h1 className='text-center text-yellow text-5xl text-ellipsis leading-slineheight1 font-serif tracking-widest sm:text-8xl'>Locations</h1>
       <div className='p-2'>
       {loc.map((data) => (
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-36 gap-y-16 px-8 py-20 sm:px-6 sm:py-21 lg:max-w-6xl lg:grid-cols-2 lg:px-8" key={data.location}>
-          <div className="bg-white rounded-md grid grid-cols-1 grid-rows-1 gap-4 sm:gap-6 lg:gap-8 text-yellow font-serif text-base tracking-widest">
-            <div className='flex items-center justify-center flex-col'>
-              <p className='font-semibold leading-slineheight1 text-4xl text-center'>{data.name}</p>
-              <p className='font-semibold text-2xl leading-slineheight2 text-center'>{data.placename}</p>
-              <p className='font-semibold text-2xl leading-slineheight2 text-center'>{data.address},&nbsp;<span className='italic text-yellow'>{data.country}</span></p>
-            </div>
-          </div>
-          <div className='flex items-center justify-center'>
-            <iframe
-              src={data.location}
-              width="480"
-              height="250"
-              style={{ border: 0, borderRadius: '0.375rem' }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+        <Locations name={data.name} placename={data.placename} address={data.address} country={data.country} location={data.location} key={data.location} />
       ))}
       </div>
     </div>

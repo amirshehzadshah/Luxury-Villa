@@ -43,7 +43,8 @@ const Input = () => {
 
 
   return (
-    <form onSubmit={handleSubmit} className='text-white'>
+    <>
+      <form onSubmit={handleSubmit} className='text-white'>
       <div className="relative mt-2 rounded-md shadow-sm">
         <div>
           <ThemeProvider theme={theme}>
@@ -66,7 +67,8 @@ const Input = () => {
         </div>
       </div>
     </form>
-  )
+    </>
+  );
 }
 
 export default Input

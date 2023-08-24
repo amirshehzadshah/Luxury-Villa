@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  border: 3px solid salmon;
+  /* border: 3px solid salmon; */
   margin: 0;
   padding: 0;
   background-image: url('./assets/luxury_villas_header_3.jpg');
