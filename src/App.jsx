@@ -7,6 +7,7 @@ import Location from './Pages/Location'
 import Aboutus from './Pages/Aboutus'
 import Contact from './Pages/Contact'
 import Footer from './Components/Footer'
+import BookNow from './Pages/BookNow'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/locations' element={<Location />} />
         <Route path='/aboutus' element={<Aboutus />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/booknow' element={<BookNow />} />
       </Routes>
       <Footer />
     </Router>
